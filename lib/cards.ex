@@ -11,4 +11,8 @@ defmodule Cards do
     ["Ace", "Two", "Three"]
   end
 
+  def shuffle(deck) do
+    deck
+    |> Enum.shuffle()
+  end
 end
