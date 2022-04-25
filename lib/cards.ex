@@ -15,4 +15,9 @@ defmodule Cards do
     deck
     |> Enum.shuffle()
   end
+
+  def contains?(deck, card) do
+    deck
+    |> Enum.member?(card)
+  end
 end
