@@ -26,6 +26,7 @@ defmodule Cards do
 
   @doc """
   Receives as first parameter a `deck` of cards, and second parameter a `card` to be searched.
+
   if it finds the `card` it returns `True` if not `False`.
   """
   def contains?(deck, card) do
@@ -34,8 +35,8 @@ defmodule Cards do
   end
 
   @doc """
-      Divides a deck into a hand and the remainder of the deck.
-      The `hand_size` argument indicates how many cards should be in the hand.
+  Divides a deck into a hand and the remainder of the deck.
+  The `hand_size` argument indicates how many cards should be in the hand.
 
   ## Examples
       iex> deck = Cards.create_deck
