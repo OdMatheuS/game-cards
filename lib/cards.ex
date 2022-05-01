@@ -41,6 +41,9 @@ defmodule Cards do
     |> Enum.split(hand_size)
   end
 
+  @doc """
+   Save a deck of cards to a local file.
+  """
   def save(deck, filename) do
     File.write(filename, deck)
   end
