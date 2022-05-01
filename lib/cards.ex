@@ -36,7 +36,13 @@ defmodule Cards do
   end
 
   def read(filename) do
-    {_status, content} = File.read(filename)
-    content
+    filename
+    |> File.read()
+    |> handle_file()
   end
+
+  defp handle_file({:ok, content}), do: content
+
+  defp handle_file({:error, reason}), do: {:error, "Error reading the file: #{reason}"}
+
 end
