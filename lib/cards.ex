@@ -67,4 +67,11 @@ defmodule Cards do
   defp handle_file({:ok, content}), do: content
 
   defp handle_file({:error, reason}), do: {:error, "Error reading the file: #{reason}"}
+
+  def create_hand(hand_size) do
+    Cards.create_deck
+    |> Cards.shuffle
+    |> Cards.deal(hand_size)
+  end
+
 end
