@@ -30,4 +30,8 @@ defmodule Cards do
     deck
     |> Enum.split(hand_size)
   end
+
+  def save(deck, filename) do
+    File.write(filename, deck)
+  end
 end
