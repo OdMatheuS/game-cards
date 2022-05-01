@@ -4,7 +4,7 @@ defmodule Cards do
   """
 
   @doc """
-    create deck cards, an array of playing cards
+    Create a list of strings representing a deck cards.
   """
 
   def create_deck do
