@@ -68,6 +68,10 @@ defmodule Cards do
 
   defp handle_file({:error, reason}), do: {:error, "Error reading the file: #{reason}"}
 
+  @doc """
+  Creates and returns a deck of cards already shuffled, passing as a parameter the `hand_size`, 
+  which informs the number of cards in the deck
+  """
   def create_hand(hand_size) do
     Cards.create_deck
     |> Cards.shuffle
