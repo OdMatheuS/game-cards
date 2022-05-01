@@ -26,7 +26,6 @@ defmodule Cards do
 
   @doc """
   Receives as first parameter a `deck` of cards, and second parameter a `card` to be searched.
-
   if it finds the `card` it returns `True` if not `False`.
   """
   def contains?(deck, card) do
