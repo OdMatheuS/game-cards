@@ -16,6 +16,9 @@ defmodule Cards do
     end
   end
 
+  @doc """
+    Receives a deck of cards and shuffles the cards.
+  """
   def shuffle(deck) do
     deck
     |> Enum.shuffle()
