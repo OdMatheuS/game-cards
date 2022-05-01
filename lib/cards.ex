@@ -48,6 +48,9 @@ defmodule Cards do
     File.write(filename, deck)
   end
 
+@doc """
+  Read a local file that contains a deck of cards.
+"""
   def read(filename) do
     filename
     |> File.read()
