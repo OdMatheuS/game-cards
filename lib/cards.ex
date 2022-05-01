@@ -34,4 +34,9 @@ defmodule Cards do
   def save(deck, filename) do
     File.write(filename, deck)
   end
+
+  def read(filename) do
+    {_status, content} = File.read(filename)
+    content
+  end
 end
