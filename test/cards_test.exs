@@ -11,4 +11,10 @@ defmodule CardsTest do
     deck = Cards.create_deck()
     assert deck != Cards.shuffle(deck)
   end
+
+  test "check if there is a card in the deck" do
+    deck = Cards.create_deck()
+    card = "Ace of Hearts"
+    assert Cards.contains?(deck, card)
+  end
 end
