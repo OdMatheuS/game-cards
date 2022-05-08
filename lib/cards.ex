@@ -27,6 +27,11 @@ defmodule Cards do
   @doc """
   Receives as first parameter a `deck` of cards, and second parameter a `card` to be searched.
   If it finds the `card` it returns `True` if not `False`.
+
+  ## Examples
+      iex> deck = Cards.create_deck
+      iex> Cards.contains?(deck, "Ace of Diamonds")
+      iex> true
   """
   def contains?(deck, card) do
     deck
