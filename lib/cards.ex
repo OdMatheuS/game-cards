@@ -29,9 +29,9 @@ defmodule Cards do
   If it finds the `card` it returns `True` if not `False`.
 
   ## Examples
-      iex> deck = Cards.create_deck
-      iex> Cards.contains?(deck, "Ace of Diamonds")
-      iex> true
+      iex> my_deck = Cards.create_deck
+      iex> Cards.contains?(my_deck, "Ace of Diamonds")
+      true
   """
   def contains?(deck, card) do
     deck
@@ -44,7 +44,7 @@ defmodule Cards do
 
   ## Examples
       iex> deck = Cards.create_deck
-      iex> {hand, deck} = Cards.deal(deck,2)
+      iex> {hand, _deck} = Cards.deal(deck,2)
       iex> hand
       ["Ace of Diamonds", "Ace of Hearts"]
   """
